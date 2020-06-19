@@ -18,6 +18,7 @@ const SignInAndSignUpPage = lazy(() =>
   import('./pages/sign-in-and-sign-up/sign-in-and-sign-up.component')
 );
 const CheckoutPage = lazy(() => import('./pages/checkout/checkout.component'));
+const ScannerPage = lazy(() => import('./pages/scanner/scanner.component'));
 
 /*import { selectCollectionsForPreview} from './redux/shop/shop.selectors';*/
 
@@ -36,6 +37,7 @@ const App =  ({ checkUserSession, currentUser }) => {
             <Route exact path='/' component={HomePage} />
             <Route path='/shop' component={ShopPage} />
             <Route exact path='/checkout' component={CheckoutPage} />
+            <Route exact path='/scan' component={ScannerPage} />
             <Route
               exact
               path='/signin'
